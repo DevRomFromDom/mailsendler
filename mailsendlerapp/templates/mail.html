@@ -1,0 +1,14 @@
+{% extends 'base.html' %} 
+{% block content%}
+<body style="width:100%;font-family: italic;">
+    <h1 style="text-align:center;font-family: 'Times New Roman'; font-style:italic">Добрый день!</h1>
+    <h5 style="text-align:center;">Какой-то текст макета</h5>
+    <div style="text-align:center;">
+        <h5>Данные на вывод:</h5>
+        <h5>1. Имя: {{first_name}}</h5>
+        <h5>2. Фамилия: {{last_name}}</h5>
+        <h5>3. День рождения: {{birthday|date:"d.m.Y"}}</h5>
+    </div> 
+    <img src="{{port_url}}/OPENED/{{filename}}/{{email_reader}}/" width="1px" height="1px" border="0" />
+</body>
+{% endblock %}
